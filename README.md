@@ -45,8 +45,8 @@ This is a simple Angular application built as an assignment to demonstrate core 
 
 ### 1️⃣ Clone the repository
 git bash:
-git clone https://github.com/jiya2802/Angular-users-app.git
-cd Angular-users-app
+- git clone https://github.com/jiya2802/Angular-users-app.git
+- cd Angular-users-app
 ### 2️⃣ Install dependencies
 npm install
 ### 3️⃣ Run the development server
