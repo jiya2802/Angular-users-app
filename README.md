@@ -1,27 +1,72 @@
-# AngualarUsersApp
+# Angular Users App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+This is a simple Angular application built as an assignment to demonstrate core Angular concepts including components, routing, directives, dynamic components, and API integration. The app fetches users from an API, displays them in a clean UI, and opens a dynamic user details modal.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Features Implemented
 
-## Code scaffolding
+### ✔ 1. Users List Page (`/users`)
+- Fetches data from JSONPlaceholder API.
+- Displays a vertically aligned list of users.
+- Each user card shows:
+  - Name (bold)
+  - Email (light text)
+  - “View Details” button on the right.
+- Clicking “View Details” opens a **dynamic modal**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ✔ 2. Dynamic Modal (User Details)
+- The modal is **not** statically added in HTML.
+- Loaded using **ViewContainerRef + createComponent()** (as required).
+- Shows selected user information: Name, Email, Username, Phone.
+- Close button removes the modal.
+- Modal route syncs with URL: `/users/:id`.
 
-## Build
+### ✔ 3. Routing (As required)
+- `/users` → Shows list of users.
+- `/users/:id` → Shows list + auto-opens modal for that user.
+- `/about` → Simple About page.
+- `''` → Redirects to `/users`.
+- `**` → Redirects to `/users`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✔ 4. API Integration
+- Uses Angular **HttpClient**.
+- UserService handles all requests.
+- Includes loading & error handling.
 
-## Running unit tests
+## 🛠️ Tech Stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular 16.2.11** (or your version)
+- TypeScript
+- HTML + CSS
+- JSONPlaceholder API
 
-## Running end-to-end tests
+## 🚀 How to Run the Project
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 1️⃣ Clone the repository
+git bash:
+git clone <your-repository-url>
+cd <project-folder>
+### 2️⃣ Install dependencies
+npm install
+### 3️⃣ Run the development server
+ng serve
+### 4️⃣ Open in browser
+http://localhost:4200
 
-## Further help
+### Assignment Requirements✓
+| Requirement                     | Status                            |
+| ------------------------------- | --------------------------------- |
+| Users list                      | ✔ Completed                       |
+| View Details popup              | ✔ Dynamic Component               |
+| Routing (/users, /user/:id)     | ✔ Implemented as /users/:id       |
+| API calls                       | ✔ Handled                         |
+| Directives                      | ✔ Used (*ngFor, *ngIf, [ngStyle]) |
+| Clean UI                        | ✔ Done                            |
+| README with setup + description | ✔ Provided                        |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Screenshots
+![Screenshot_21-11-2025_173125_localhost](https://github.com/user-attachments/assets/b11c9100-6e0a-44ef-b048-d0a120f456ae)
+![Screenshot_21-11-2025_17324_localhost](https://github.com/user-attachments/assets/d26a61e8-9a78-4694-bdbf-b19852f98429)
+![Screenshot_21-11-2025_173317_localhost](https://github.com/user-attachments/assets/62c18cfa-77ff-4df8-a155-4d9ef3f49abf)
+
