@@ -1,0 +1,33 @@
+/* Whole page background – light grey */
+.page-background {
+  background: #e6e6e6;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* The white rounded navbar box */
+.top-nav {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 10px;       /* matches screenshot softness */
+  display: flex;
+  gap: 30px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* Links inside nav */
+.top-nav a {
+  color: #222222;
+  text-decoration: none;
+}
+
+/* Active tab → bold text ONLY (no underline) */
+.top-nav a.active {
+  font-weight: 700;
+}
+
+/* Content box (Users list area) */
+.content-area {
+  margin-top: 30px;
+}

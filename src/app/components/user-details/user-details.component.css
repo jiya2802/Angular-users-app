@@ -1,0 +1,63 @@
+/* POPUP OVERLAY */
+.popup-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30%;
+  /* margin: 15px; */
+  z-index: 10;
+}
+/* POPUP CARD */
+.popup-card {
+  background: rgba(255,255,255,0.80);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+  display: flex;           
+  flex-direction: column;  
+  height: 300px;           
+}
+
+.popup-card h3 {
+  text-align: left;      
+  margin: 0 0 15px 0;    
+  font-size: 24px;       
+}
+
+/* DETAIL ROWS */
+.detail-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.label {
+  width: 110px;
+  /* font-weight: bold; */
+}
+
+.value {
+  color: #444;
+}
+
+.close-btn-container {
+  margin-top: auto;
+  text-align: right;  
+}
+
+.close-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 6px 14px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+
+
+
+

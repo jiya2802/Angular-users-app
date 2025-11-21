@@ -1,0 +1,24 @@
+<div class="popup-overlay">
+  <div class="popup-card">
+    <h3>User Details</h3>
+    <div class="detail-row">
+      <span class="label">Name</span>
+      <span class="value">{{ user.name }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Username</span>
+      <span class="value">{{ user.username }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Email</span>
+      <span class="value">{{ user.email }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Phone</span>
+      <span class="value">{{ user.phone }}</span>
+    </div>
+    <div class="close-btn-container">
+      <button class="close-btn" (click)="close()">Close</button>
+    </div>
+  </div>
+</div>

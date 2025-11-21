@@ -1,0 +1,75 @@
+/* MAIN BIG BOX */
+h3{
+    margin:20px;
+}
+.main-box {
+  width: 95%;
+  /* max-width: 900px; */
+  background: white;
+  margin: 20px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+/* LEFT USER LIST */
+.left-list {
+  width: 100%;
+}
+
+.user-row {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.user-row > div {
+  width: 52%;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.email {
+  font-size: 15px;
+  color: gray;
+}
+
+/* BUTTON */
+.view-btn {
+  margin-left: 20px;  
+  min-width: 120px;   
+  background: white;
+  color: black;
+  border: 1px solid gray;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.left-list {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.loading {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.error {
+  padding: 10px;
+  color: red;
+  text-align: center;
+}
+
+.selected {
+  background: #e8f3ff;
+  border-left: 4px solid #2a7bff;
+}
+
+

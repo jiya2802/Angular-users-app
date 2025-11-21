@@ -1,0 +1,20 @@
+<h3>Users</h3>
+<div *ngIf="loading" class="loading">Loading...</div>
+<div *ngIf="error" class="error">{{ error }}</div>
+<div class="main-box">
+  <div class="left-list">
+    <div class="user-row" 
+     *ngFor="let user of users"
+     [class.selected]="user.id === selectedUserId">
+      <div>
+        <div class="name">{{ user.name }}</div>
+        <div class="email">{{ user.email }}</div>
+      </div>
+      <button class="view-btn" (click)="openDetails(user)">
+        View Details
+      </button>
+    </div>
+  </div>
+  <!-- Dynamic modal placeholder -->
+  <ng-template #modalContainer></ng-template>
+</div>
